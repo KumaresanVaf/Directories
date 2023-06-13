@@ -71,9 +71,9 @@
             string CopyPath = @"E:\kk\System_IO\FileInfoClass\MoveFile\sample.docs";
 
             FileInfo sourceFile = new FileInfo(sourcePath);
-            FileInfo destinationFile = new FileInfo(CopyPath);
+            FileInfo copyfile = new FileInfo(CopyPath);
 
-            if (!destinationFile.Exists)
+            if (!copyfile.Exists)
             {
                 sourceFile.CopyTo(CopyPath);
                 Console.WriteLine("File copied successfully.");
@@ -83,7 +83,7 @@
                 Console.WriteLine("The file already exists.");
             }
             Console.WriteLine("\nMoveFile:");
-            if (!destinationFile.Exists)
+            if (!copyfile.Exists)
             {
                 sourceFile.MoveTo(CopyPath);
                 Console.WriteLine("File Move Successfully");
