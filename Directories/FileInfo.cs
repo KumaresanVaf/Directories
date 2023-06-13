@@ -107,7 +107,6 @@
 
             Console.WriteLine($"File last write time is {file1.LastWriteTime}");
 
-            Console.ReadLine();
         }
     }
 }
